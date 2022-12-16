@@ -1,0 +1,54 @@
+/* Write your code here */
+@media screen and (min-width:100px){ 
+ .container{
+display: grid;
+grid-template-columns: 90%;
+width: 100%;
+align-items: center;
+justify-content: center;
+justify-self: center;
+height: auto;} 
+
+img{
+    width: 100%
+}}
+
+@media screen and (min-width:600px){ 
+#maincontent{
+position: absolute;
+top: auto;
+}
+.container{
+display: grid;
+grid-template-columns: 30% 30% 30%;
+grid-template-rows: auto;
+width: 90%;
+align-items: center;
+justify-content: center;
+justify-self: center;
+height: auto;} 
+
+.container :nth-child(odd){  
+    grid-column: 1/span 2;
+}
+.container :nth-child(even){  
+    grid-column: 2/span 3;
+}}
+
+@media screen and (min-width:900px){ 
+.container{
+display: grid;
+grid-template-columns: 20% 20% 20% 20%;
+grid-template-rows: auto;
+margin:auto;
+width: 80%;
+align-items: center;
+justify-content:space-between;
+justify-self: center;
+height: auto;} 
+.container :nth-child(even){  
+    grid-column: auto/span 2;
+}
+
+}
+
